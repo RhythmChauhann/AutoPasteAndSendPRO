@@ -1,0 +1,142 @@
+AutoPasteAndSendPRO
+A Smart Auto-Paster With GUI, Hotkeys, Progress Bar & Automation Tools
+AutoPasteAndSendPRO is a Python-based GUI app that lets you automatically paste text wherever your cursor is and press Enter — perfect for automation, testing, messaging, or repeated submissions.
+
+The tool is built with Tkinter, PyAutoGUI, Pyperclip, and includes advanced features like:
+
+🔁 Repeat messages any number of times
+
+⏳ Smooth animated progress bar
+
+🕒 Custom delay between messages
+
+❌ Cancel button (stop the loop instantly)
+
+🎧 Notification sound on completion
+
+⌨️ Global hotkey (F8) to start
+
+💾 Saves last used text automatically
+
+🧵 Multithreading so the UI never freezes
+
+🖥️ EXE support via PyInstaller
+
+🚀 Features
+✔ Auto Paste Anywhere
+Automatically pastes text and hits Enter, anywhere your cursor is focused.
+
+✔ Send Multiple Times
+Enter how many times you want the message to be pasted.
+
+✔ Custom Delay
+Choose a delay between each message to avoid spam locks or app freezing.
+
+✔ Cancel Button
+Stop the process immediately at any point.
+
+✔ Hotkey Support (F8)
+Trigger the sending process from anywhere on your PC.
+
+✔ Saves Last Text
+Automatically saves text in last_text.txt so it's available next time.
+
+✔ Notification Sound
+Plays a sound when the process is finished.
+
+✔ Progress Bar + Percentage
+Smooth animated progress bar shows real-time progress.
+
+📂 Project Structure
+css
+Copy code
+AutoPasteAndSendPRO/
+│
+├── main.py
+├── last_text.txt
+├── AutoPasteAndSendPRO.spec
+├── README.md
+├── requirements.txt
+└── icon.ico (optional)
+📦 Installation
+1️⃣ Clone the Repository
+bash
+Copy code
+git clone https://github.com/YourUsername/AutoPasteAndSendPRO.git
+cd AutoPasteAndSendPRO
+2️⃣ Install Dependencies
+nginx
+Copy code
+pip install -r requirements.txt
+3️⃣ Run the App
+css
+Copy code
+python main.py
+🛠 Build EXE (Windows)
+Use the provided PyInstaller config:
+
+✔ Build using .spec file
+nginx
+Copy code
+pyinstaller AutoPasteAndSendPRO.spec
+✔ OR build using command:
+lua
+Copy code
+pyinstaller --name AutoPasteAndSendPRO --onefile --noconsole --icon=icon.ico main.py
+Your EXE will be created in:
+
+Copy code
+dist/AutoPasteAndSendPRO.exe
+🔧 Configurable Files
+🔹 last_text.txt
+Stores the last used text. Automatically loaded on startup.
+
+🔹 AutoPasteAndSendPRO.spec
+Pre-configured build file for PyInstaller.
+
+🎮 How to Use
+Type or paste the message into the text box
+
+Enter how many times to send it
+
+Set a custom delay (optional)
+
+Position your cursor in the target app
+
+Click Start or press F8
+
+Watch the progress bar
+
+Cancel anytime
+
+Hear a sound when done
+
+👨‍💻 Technologies Used
+Python 3
+
+Tkinter
+
+PyAutoGUI
+
+Pyperclip
+
+Keyboard
+
+Playsound
+
+PyInstaller
+
+📝 To-Do / Future Upgrades
+Dark mode UI
+
+Logs output panel
+
+Custom hotkeys
+
+Themes / Modern UI (ttkbootstrap)
+
+Add countdown timer before start
+
+📄 License
+MIT License — free to use, modify, and distribute.
+
